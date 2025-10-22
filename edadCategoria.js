@@ -3,8 +3,8 @@
 //“Adolescente” si entre 12 y 17 
 //“Adulto” si entre 18 y 59
  //“Adulto mayor” si ≥ 60
-
-let edad = parseInt(prompt("Ingresa tu edad:"));
+function edadCategoria(){
+ let edad = parseInt(prompt("Ingresa tu edad:"));
  
 if (isNaN(edad) || edad < 0) {
     alert("Edad inválida. Debe ser un número positivo.");
@@ -23,4 +23,6 @@ if (isNaN(edad) || edad < 0) {
 
     // Mostrar resultado
     alert("Tu categoría es: " + categoria); 
+}
+
 }
