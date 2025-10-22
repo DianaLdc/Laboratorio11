@@ -4,7 +4,8 @@ El usuario ingresa un monto a retirar.
 El programa debe indicar cuántos billetes de 100, 50, 20 y 10 se entregan.
 (Debe ser la menor cantidad de billetes). Programa iterativo.
 */
-
+function cajeroAutomatico(){
+    
 let monto = parseInt(prompt("Ingresa el monto a retirar (múltiplo de 10):"), 10);
 
 let original = monto; // Guardamos el monto original
@@ -41,3 +42,4 @@ Billetes de 100: ${billete100}
 Billetes de 50: ${billete50}
 Billetes de 20: ${billete20}
 Billetes de 10: ${billete10}`);
+}
