@@ -1,7 +1,7 @@
 //Contador de números pares e impares.
 //Pide 10 números y muestra cuántos fueron pares y cuántos impares
-
-let pares = 0;
+function contadorParesImpares(){
+    let pares = 0;
 let impares = 0;
 
 for (let i = 1; i <= 10; i++) {
@@ -16,3 +16,5 @@ for (let i = 1; i <= 10; i++) {
 
 alert(`Cantidad de números pares: ${pares}`);
 alert(`Cantidad de números impares: ${impares}`);
+}
+
