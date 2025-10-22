@@ -1,40 +1,43 @@
-//Cajero automático. 
-//El usuario ingresa un monto a retirar. 
-//El programa debe indicar cuántos billetes de 100, 50, 20 y 10 se entregan.
-//(Debe ser la menor cantidad de billetes). Programa iterativo
+/*
+Cajero automático.
+El usuario ingresa un monto a retirar.
+El programa debe indicar cuántos billetes de 100, 50, 20 y 10 se entregan.
+(Debe ser la menor cantidad de billetes). Programa iterativo.
+*/
 
-let opcion;
+let monto = parseInt(prompt("Ingresa el monto a retirar (múltiplo de 10):"), 10);
 
-do {
-    opcion = prompt(
-        "MENÚ:\n" +
-        "1. Calcular área del círculo\n" +
-        "2. Calcular área del rectángulo\n" +
-        "3. Salir\n\n" +
-        "Ingresa el número de la opción:"
-    );
+let original = monto; // Guardamos el monto original
 
-    switch(opcion) {
-        case "1":
-            let radio = parseFloat(prompt("Ingresa el radio del círculo:"));
-            let areaCirculo = Math.PI * radio * radio;
-            alert(`El área del círculo es: ${areaCirculo.toFixed(2)}`);
-            break;
+let billete100 = 0;
+let billete50 = 0;
+let billete20 = 0;
+let billete10 = 0;
 
-        case "2":
-            let base = parseFloat(prompt("Ingresa la base del rectángulo:"));
-            let altura = parseFloat(prompt("Ingresa la altura del rectángulo:"));
-            let areaRectangulo = base * altura;
-            alert(`El área del rectángulo es: ${areaRectangulo.toFixed(2)}`);
-            break;
+// Calcular billetes usando bucles while
+while (monto >= 100) {
+    billete100++;
+    monto -= 100;
+}
 
-        case "3":
-            alert("¡Saliendo del programa!");
-            break;
+while (monto >= 50) {
+    billete50++;
+    monto -= 50;
+}
 
-        default:
-            alert("Opción inválida, intenta de nuevo.");
-            break;
-    }
+while (monto >= 20) {
+    billete20++;
+    monto -= 20;
+}
 
-} while (opcion !== "3");
+while (monto >= 10) {
+    billete10++;
+    monto -= 10;
+}
+
+// Mostrar resultados en un solo alert
+alert(`Monto solicitado: ${original}
+Billetes de 100: ${billete100}
+Billetes de 50: ${billete50}
+Billetes de 20: ${billete20}
+Billetes de 10: ${billete10}`);
