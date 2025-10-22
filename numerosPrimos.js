@@ -1,7 +1,8 @@
 //Números primos en rango.
 //Pide un número y muestra todos los primos entre 1 y dicho número. 
 //Programa iterativo
-
+function numerosPrimos(){
+    
 let limite = parseInt(prompt("Ingresa un número límite para mostrar los primos:"), 10);
 
 let primos = [];  
@@ -23,3 +24,5 @@ for (let num = 2; num <= limite; num++) {
 
 alert(`Números primos entre 1 y ${limite}:\n${primos.join(", ")}`);
 
+
+}
