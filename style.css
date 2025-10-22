@@ -1,0 +1,197 @@
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf6f0;
+    color: #2c2c2c;
+}
+
+header {
+    background-color: #1b1b1b;
+    color: #d4af37;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a.activo,
+nav a:hover {
+    border-bottom: 2px solid #d4af37;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+}
+
+.tarjetas-centradas {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.tarjetas-verticales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+.tarjeta {
+    width: 320px;
+    min-height: 220px;
+    border-radius: 10px;
+    padding: 22px;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    font-family: "Georgia", serif;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta-primaria {
+    background: linear-gradient(180deg, #3e2f1c 0%, #b8860b 100%);
+}
+
+.tarjeta-secundaria {
+    background: linear-gradient(180deg, #4b3821 0%, #c6a338 100%);
+}
+
+.tarjeta-terciaria {
+    background: linear-gradient(180deg, #5a4323 0%, #d4af37 100%);
+}
+
+.tarjeta-cuarta {
+    background: linear-gradient(180deg, #2e2216 0%, #9c7b1b 100%);
+}
+
+.tarjeta h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #fdf7e2;
+    font-weight: bold;
+}
+
+.tarjeta p {
+    margin: 0 0 18px 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.boton {
+    display: inline-block;
+    background: #b8860b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background: #8b6914;
+}
+
+footer {
+    background-color: #1b1b1b;
+    color: #f5deb3;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    background-color: #fffaf0;
+}
+
+.formulario button {
+    background-color: #b8860b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #8b6914;
+}
+
+@media (max-width: 900px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+        min-height: 180px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
