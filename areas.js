@@ -2,7 +2,8 @@
 //Calcular área del círculo 
 //Calcular área del rectángulo 
 //Salir 
-
+function areas(){
+    
 let opcion;
 
 do {
@@ -40,3 +41,4 @@ do {
 } while (opcion !== "3");
 
 
+}
