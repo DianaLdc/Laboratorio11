@@ -9,7 +9,8 @@
 //Generar una tabla de multiplicar
 //Salir 
 //Debe repetirse hasta que el usuario elija la opción “Salir”.
- 
+ function estadisticasNNotas(){
+  
 function pedirNotas(cantidad) {
     let notas = [];
     for (let i = 0; i < cantidad; i++) {
@@ -42,7 +43,7 @@ function tablaMultiplicar() {
 }
 
 let opcion;
-
+  
 do {
     opcion = prompt(`Menú principal:\n1. Estadísticas de N notas\n2. Contar números pares e impares en un rango\n3. Generar una tabla de multiplicar\n4. Salir`);
 
@@ -97,3 +98,5 @@ do {
 
 } while(opcion !== "4");
 
+
+ }
