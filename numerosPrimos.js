@@ -5,7 +5,7 @@ function numerosPrimos(){
     
 let limite = parseInt(prompt("Ingresa un número límite para mostrar los primos:"), 10);
 
-let primos = [];  
+let primos = [];   
 
 for (let num = 2; num <= limite; num++) {
     let esPrimo = true;
