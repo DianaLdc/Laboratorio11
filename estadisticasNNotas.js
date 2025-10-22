@@ -9,7 +9,7 @@
 //Generar una tabla de multiplicar
 //Salir 
 //Debe repetirse hasta que el usuario elija la opción “Salir”.
-
+ 
 function pedirNotas(cantidad) {
     let notas = [];
     for (let i = 0; i < cantidad; i++) {
