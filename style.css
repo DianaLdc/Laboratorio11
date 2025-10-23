@@ -1,3 +1,4 @@
+ 
 body {
     font-family: "Georgia", serif;
     margin: 0;
@@ -5,7 +6,7 @@ body {
     background-color: #faf6f0;
     color: #2c2c2c;
 }
-
+ 
 header {
     background-color: #1b1b1b;
     color: #d4af37;
@@ -13,25 +14,21 @@ header {
     text-align: center;
     letter-spacing: 1px;
 }
-
+ 
 main {
     padding: 30px;
     text-align: center;
 }
-
-main p {
-    text-align: justify;
-}
-
-.tarjetas {
+ 
+.tarjetas-verticales {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 24px;
     margin-top: 30px;
     padding: 0 20px;
     box-sizing: border-box;
-}
+} 
 
 .tarjeta {
     width: 320px;
@@ -51,7 +48,7 @@ main p {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
-
+ 
 .tarjeta-primaria {
     background: linear-gradient(180deg, #3e2f1c 0%, #b8860b 100%);
 }
@@ -67,12 +64,12 @@ main p {
 .tarjeta-cuarta {
     background: linear-gradient(180deg, #2e2216 0%, #9c7b1b 100%);
 }
-
+ 
 .tarjeta h2 {
     margin: 0 0 12px 0;
     font-size: 1.25rem;
-    color: #fdf7e2;
     font-weight: bold;
+    color: #fdf7e2;
 }
 
 .tarjeta p {
@@ -80,7 +77,7 @@ main p {
     font-size: 0.95rem;
     opacity: 0.95;
 }
-
+ 
 .boton {
     display: inline-block;
     background: #b8860b;
@@ -89,14 +86,15 @@ main p {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
     cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
 }
 
 .boton:hover {
     background: #8b6914;
 }
-
+ 
 footer {
     background-color: #1b1b1b;
     color: #f5deb3;
@@ -105,16 +103,15 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
-
+ 
 @media (max-width: 900px) {
-    .tarjetas {
-        flex-direction: column;  
+    .tarjetas-verticales {
+        flex-direction: column;
         align-items: center;
-        gap: 20px;  
     }
 
     .tarjeta {
-        width: 90%;  
+        width: 90%;
         min-height: 180px;
     }
 }
